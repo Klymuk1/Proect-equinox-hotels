@@ -1,0 +1,467 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+div.header {
+    background: black;
+    position: fixed;
+    width: 100%;
+}
+div.header:hover {
+    background: white;
+}
+div.header div.logo {
+    background: url(/img/logo_main-wht.png);
+    width: 300px;
+    height: 18px;
+    background-size: 100%;
+}
+div.header:hover div.logo {
+    background: url(/logo_main-blk.svg);
+    width: 300px;
+    height: 18px;
+    background-size: 100%;
+}
+div.header:hover a {
+    color: rgb(77, 64, 64);
+    border-bottom: 1px solid white;
+}
+div.header:hover a:hover {
+    color: rgb(70, 62, 62);
+    border-bottom: 1px solid black;
+}
+div.header:hover ul {
+    background: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+div.header:hover div.header-top {
+    background: white;
+}
+div.header-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+div.header-top {
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+}
+div.locations a,
+div.book a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+div.logo img {
+    width: 300px;
+}
+div.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid black;
+    background: black;
+}
+div.menu li ul {
+    position: absolute;
+    background: black;
+    width: 100%;
+    left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    transform: translateY(-58px);
+    z-index: -1;
+    transition-duration: 0.5s;
+}
+div.menu li:hover ul {
+    transform: translateY(0px);
+}
+div.menu li ul:hover {
+    z-index: 1;
+}
+div.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 0.8em;
+    border-bottom: 1px solid black;
+}
+div.menu a:hover {
+    border-bottom: 1px solid white;
+}
+/*..Gif-block..*/
+div.gif-picture {
+    background: url(/img/gif\ home_reduced.gif);
+    background-size: cover;
+    height: 700px;
+    border-top: 1px solid black;
+}
+h1 {
+    font-size: 50px;
+    width: 70%;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    margin: 200px auto;
+}
+.gif-picture a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 10%;
+    margin: 0 auto;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 30px;
+    transition-duration: 400ms;
+    transform-origin: left;
+}
+.gif-picture a:hover {
+    background-color: black;
+    color: #fff;
+}
+/*...Rozdil-one,two....*/
+div.rozdil-one h2 {
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+div.rozdil-one {
+    padding-top: 200px;
+}
+div.rozdil-two {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 50px;
+}
+div.rozdil-one h2 span {
+    text-transform: capitalize;
+    font-size: 50%;
+    font-weight: normal;
+    display: block;
+    padding: 30px;
+}
+div.line div {
+    width: 50px;
+    height: 4px;
+    background: grey;
+    display: inline-block;
+    margin: 3px;
+}
+div.line {
+    text-align: center;
+    padding: 50px;
+}
+div.line div:first-child {
+    background: black;
+}
+div.line div:nth-child(3) {
+    background: red;
+}
+div.box-left {
+    width: 25%;
+    padding: 0px 5%;
+}
+div.box-right {
+    width: 65%;
+    overflow: hidden;
+}
+div.box-right img {
+    width: 100%;
+}
+h4 {
+    font-weight: 100;
+}
+h3 {
+    font-weight: 100;
+    font-size: 2em;
+}
+p {
+    line-height: 1.5em;
+}
+a.button {
+    display: inline-block;
+    background: black;
+    border: 1px solid black;
+    padding: 20px;
+    color: white;
+    font-weight: 100;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 20px 30px;
+    transition-duration: .8s;
+}
+a.button:hover {
+    background: white;
+    color: black;
+}
+div.face img {
+    width: 100%;
+}
+div.face {
+    height: 523px;
+    background: url(/img/light-1280x523.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-top: 1px solid white;
+}
+div.face h2 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    margin: 180px auto 80px;
+}
+div.face a {
+    color: white;
+    text-decoration:none;
+    font-size: 1.2em;
+    border-bottom: 2px solid #908781;
+    margin-bottom: 50px;
+}
+div.rozdil-three-flex-box {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 100px;
+}
+div.picter-left {
+    width: 50%;
+    padding-left: 5%;
+}
+div.picter-left img {
+    width: 100%;
+}
+div.conteiner-right3 {
+    width: 50%;
+    padding-left: 3%;
+}
+div.conteiner-right3 p {
+    width: 50%;
+}
+a.knopka {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    transition-duration: 0.4s;
+    border: 1px solid black;
+    background: black;
+}
+a.knopka:hover {
+    background: white;
+    color: black;
+}
+/*.......Rozdil-four......*/
+div.rozdil-four {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 120px 0 0;
+    text-align: center;
+    padding-bottom: 45px;
+}
+div.rozdil-four-left {
+    background-image: url(/img/20200130-equinox19108-scaled-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+div.rozdil-four-right {
+    background-image: url(/img/group-24023-scaled-e1576881496231.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+div.rozdil-four h2 {
+    font-size: 60px;
+    color: white;
+    line-height: 60px;
+}
+div.rozdil-four-title {
+    width: 60%;
+    margin: 175px auto 175px;
+}
+div.rozdil-four-title-a {
+    text-align: center;
+    margin: 205px auto 205px;
+}
+div.rozdil-four a {
+    display: inline-block;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 50px auto;
+    border-bottom: 3px solid grey;
+}
+/*Five-rozdil*/
+div.rozdil-five-flex-box {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 100px;
+}
+div.rozdil-five-picter {
+    width: 50%;
+    padding-left: 5%;
+}
+div.rozdil-five-picter img {
+    width: 100%;
+}
+div.text-right {
+    width: 50%;
+    padding-left: 5%;
+}
+div.text-right p {
+    width: 50%;
+}
+/*Rozdil-six*/
+div.rozdil-six {
+    height: 550px;
+    background: url(/img/eating-scaled-1-1280x550.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-top: 1px solid white;
+}
+div.rozdil-six a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-bottom: 3px solid grey;
+    margin-bottom: 50px;
+}
+div.rozdil-six h2 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    margin: 180px auto 80px;
+}
+/*Rozdil-seven*/
+div.rozdil-seven {
+    background-color: black;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #3E3E3E;
+}
+.rozdil-seven-picters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.rozdil-seven h5 {
+    font-size: 25px;
+    color: white;
+    font-weight: 900;
+    margin: 180px auto 80px;
+    letter-spacing: 0.4em;
+}
+div.rozdil-seven img {
+    margin: 0 1% 50px;
+}
+div.rozdil-seven a {
+    border: 1px solid grey;
+    margin: 50px 0 100px;
+}
+/*Pidval*/
+footer {
+    background-color: black;
+    padding: 100px 1% 50px;
+}
+div.links a {
+    color: white;
+    font-size: 18px;
+    margin-right: 15px;
+    text-decoration: none;
+    line-height: 30px;
+}
+div.flex-box {
+    display: flex;
+    justify-content: space-between;
+    color: #3E3E3E;
+    font-size: 18px;
+    margin-top: 50px;
+}
+@media screen and (max-width: 960px) {
+    div.header-top {
+        padding: 15px;
+    }
+    div.menu a {
+        padding: 10px 12px;
+        font-size: .7em;
+    }
+}
+@media screen and (max-width: 678px) {
+    div.header-top {
+        padding: 10px;
+    }
+    div.menu a {
+        padding: 7px;
+        font-size: .7em;
+        border-bottom: 1px solid black;
+    }
+    div.gif-picture {
+        height: 600px;
+    }
+    h1 {
+        font-size: 30px;
+        margin: 200px auto 100px;
+    }
+    div.rozdil-one h2 {
+        width: 80%;
+    }
+
+    div.rozdil-two a.button {
+        display: inline-block;
+        background: black;
+        border: 1px solid black;
+        padding: 20px;
+        color: rgb(176, 48, 48);
+        font-weight: 100;
+        font-size: 0.8em;
+    
+    }
+
+    div.rozdil-two h2,
+    div.rozdil-six h2 {
+        font-size: 22px;
+    }
+    div.rozdi-four {
+        display: flex;
+        flex-direction: column;
+    }
+    div.rozdil-four-left {
+        width: 100%;
+        background-position: 65%;
+    }
+    div.rozdil-four-right {
+        width: 100%;
+    }
+    div.rozdil-four h2 {
+        font-size: 45px;
+    }
+    div.rozdil-four-left {
+        background-position: 65%;
+    }
+    a.knopka {
+        padding: 15px 20px;
+        font-size: 1em;
+    }
+    footer {
+        padding: 10px 10px 50px;
+    }
+    div.footer .links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    div.footer .flex-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #fff;
+    }
+}
